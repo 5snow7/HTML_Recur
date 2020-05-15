@@ -76,11 +76,36 @@ koch(t,len/3,lev-1);
 }
 
 function koch1(){
+tk.set1(450,250,0)
 cntk++;clear_Can();
 for(let j=1;j<13;j++){
 koch(tk,inputLen,cntk);
 tk.set1(450,250,30*j);}
 if(cntk>4){cntk=0;}
+tk.set1(450,250,0)
+}
+
+
+function kochAng(t,ang,len,lev){
+if(lev<=0){t.fd(len);}
+else{
+kochAng(t,ang,len/3,lev-1);t.lt(ang);	
+kochAng(t,ang,len/3,lev-1);t.rt(180-ang);
+kochAng(t,ang,len/3,lev-1);t.rt(180-ang);
+kochAng(t,ang,len/3,lev-1);lt(ang);
+kochAng(t,ang,len/3,lev-1);
+}
+}
+
+function kochAng1(){
+tk.set1(450,250,0)
+cntk++;clear_Can();
+//for(let j=1;j<13;j++){
+kochAng(tk,90,inputLen,cntk);
+tk.set1(450,250,0);//*j);
+//}
+if(cntk>4){cntk=0;}
+tk.set1(450,250,0)
 }
 
 function inPut1(){
