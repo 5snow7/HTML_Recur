@@ -101,7 +101,7 @@ function kochAng1(){
 tk.set1(450,250,0)
 cntk++;clear_Can();
 //for(let j=1;j<13;j++){
-kochAng(tk,90,inputLen,cntk);
+kochAng(tk,73,inputLen,cntk);
 tk.set1(450,250,0);//*j);
 //}
 if(cntk>4){cntk=0;}
