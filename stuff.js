@@ -30,11 +30,7 @@ function funcTest(){
 	     t.rt(40);
 	}
 	}
-	
 
-
-
-	
 function recur1(){
 clear_Can();
 v(trecur,200,k);k++;
@@ -92,7 +88,7 @@ else{
 kochAng(t,ang,len/3,lev-1);t.lt(ang);	
 kochAng(t,ang,len/3,lev-1);t.rt(180-ang);
 kochAng(t,ang,len/3,lev-1);t.rt(180-ang);
-kochAng(t,ang,len/3,lev-1);lt(ang);
+kochAng(t,ang,len/3,lev-1);t.lt(ang);
 kochAng(t,ang,len/3,lev-1);
 }
 }
